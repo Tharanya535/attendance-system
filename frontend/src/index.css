@@ -1,0 +1,31 @@
+:root {
+  --bg-main: #0B0E1C;
+  --bg-card: rgba(255, 255, 255, 0.05);
+  --border-glow: rgba(0, 255, 255, 0.4);
+  --accent-blue: #00eaff;
+  --accent-pink: #ff00cc;
+  --text-main: #ffffff;
+  --text-dim: #b8b8b8;
+}
+
+body {
+  background: var(--bg-main);
+  color: var(--text-main);
+  font-family: 'Inter', sans-serif;
+}
+
+/* Neon animations */
+@keyframes neonPulse {
+  0% { box-shadow: 0 0 10px var(--accent-blue); }
+  50% { box-shadow: 0 0 25px var(--accent-pink); }
+  100% { box-shadow: 0 0 10px var(--accent-blue); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.8s ease-out;
+}
