@@ -6,9 +6,7 @@ npm install
 ## Start app
 npm start
 
-## Folder Structure
-src/
- ├── components/
- ├── pages/
- ├── features/
- ├── store/
+# TAP Academy Attendance System (backend)
+
+#npm start dev
+
